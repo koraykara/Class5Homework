@@ -5,7 +5,7 @@
 2. **Source code**
     + Git clone the repository into `$GOPATH/src/paxos` folder in your computer
         ```bash
-        git clone https://github.com/Adaickalavan/paxos.git $GOPATH/src/paxos
+        git clone https://github.com/koraykara/Class5Homework.git $GOPATH/src/paxos
         ```
         Here, git clone syntax follows the pattern: `git clone <repo> <local folder-name>`.
 
