@@ -10,7 +10,7 @@
         Here, git clone syntax follows the pattern: `git clone <repo> <local folder-name>`.
 
 3. **Run Docker-Compose to Start Application** *(requires internet connectivity)*
-    + Navigate to the project folder, i.e. `$GOPATH/src/paxos/RESTApi`.
+    + Navigate to the project folder, i.e. `RESTApi`.
     + Start the application by running docker-compose.
         ```bash
         docker-compose up
