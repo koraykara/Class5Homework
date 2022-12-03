@@ -3,7 +3,7 @@
 ## Instructions
 
 2. **Source code**
-    + Git clone the repository into `$GOPATH/src/paxos` folder in your computer
+    + Git clone the repository into current folder in your computer
         ```bash
         git clone https://github.com/koraykara/Class5Homework.git $GOPATH/src/paxos
         ```
