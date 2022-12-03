@@ -1,0 +1,40 @@
+---
+version: '3'
+services:
+
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin1 #Username to access the database
+      - MONGO_INITDB_ROOT_PASSWORD=abcd #Password to access the database
+    networks:
+      - dockerNet
+    volumes:
+      - "mongo-data:/data/db"    
+
+  #API
+  web:
+    build: ./web
+    image: web
+    ports:
+      - "8080:8080"
+    networks:
+      - dockerNet
+    depends_on:
+      - mongo
+    environment:
+      - LISTENING_ADDR=8080
+      - MONGO_PORT=mongo:27017  
+      - MONGO_USERNAME=admin1
+      - MONGO_PASSWORD=abcd
+      - DATABASE_NAME=hashtable
+      - COLLECTION_NAME=message
+
+volumes:
+  mongo-data: 
+networks:
+  dockerNet:
+    driver: bridge
