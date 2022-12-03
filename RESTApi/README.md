@@ -3,9 +3,9 @@
 ## Instructions
 
 2. **Source code**
-    + Git clone the repository into current folder in your computer
+    + Git clone the repository into src folder in your computer
         ```bash
-        git clone https://github.com/koraykara/Class5Homework.git $GOPATH/src/paxos
+        git clone https://github.com/koraykara/Class5Homework.git /src
         ```
         Here, git clone syntax follows the pattern: `git clone <repo> <local folder-name>`.
 
