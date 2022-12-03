@@ -1,2 +1,3 @@
-# Class5Homework
-Devpaths Class 5 Homework
+# Paxos
+
+See [website](https://adaickalavan.github.io/portfolio/paxos/) for information.
